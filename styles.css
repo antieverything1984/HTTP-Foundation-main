@@ -1,0 +1,268 @@
+/*Some colors based on:
+https://www.w3schools.com/colors/colors_palettes.asp
+
+Color converter:
+https://www.w3schools.com/colors/colors_converter.asp
+
+Color names:
+https://www.w3schools.com/colors/colors_names.asp
+
+Color opacity based on:
+https://www.w3schools.com/css/css3_colors.asp
+*/
+/* --------
+START Nav Styles for MOBILE
+-------- */
+/* These styles are for background color to the top navigation */
+.topnav {
+  background-color: #FFE183, 0.5;
+  opacity: 0.7;
+  overflow: hidden;
+}
+
+/* These styles are for the links inside the navigation bar */
+.topnav a {
+  color: brown;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 17px;
+  /* Leave the styles below alone */
+  display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+/* These styles when mouse hovers over links */
+.topnav a:hover {
+  color: black;
+}
+
+/* Leave this alone */
+.topnav .icon {
+  display: none;
+}
+
+/* --------
+END Nav Styles for MOBILE
+-------- */
+/* --------
+Styles for your mobile webpage
+ -------- */
+
+ /* --------
+ HERO STYLES
+ -------- */
+
+#logo {
+  /* ------ Max width to keep logo image from being larger than intended ------ */
+  max-width: 100%;
+	margin: auto;
+	width: 500px;
+  display: block;
+}
+
+/* The hero image */
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("We+the+People+Image.jpg") ;
+  height: 35vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+ .hero-text {
+	color: white;
+	font-size: 1em;
+	transform: translate(-50%, -50%);
+	position: absolute;
+    top: 50%;
+	left: 50%;
+	}
+body {
+  background: #FFE183;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin: 1% auto;
+  width:90%;
+  font-family: serif;
+  font-size: 20px;
+}
+
+section {
+    margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 35px 0;
+	background-color: saddlebrown;
+ 	color: antiquewhite;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+h3 {
+      font-size: 25px;
+      font-family: serif;
+    }
+
+h4 {
+    font-size: 14px;
+    font-family: serif;
+    font-style: italic;
+	text-align: center;
+  }
+input, button {
+	padding: 8px 12px;
+	font-size: 1.3em;
+	border-radius: 5px;
+}
+
+input {
+	width: 250px;
+}
+
+button {
+	 margin-top: 3%;
+     margin-bottom: 3%;
+	 text-align: right;
+	 float: right;
+}
+.quote {
+	 margin-top: 30px;
+	 text-align: center;
+}
+
+.credit {
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.staff-image {
+    border-radius:50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#staff {
+  max-width: 65%;
+  margin: auto;
+  padding-right: 30px;
+  padding-top: 30px;
+  text-align: center;
+}
+/* --------
+Media Queries
+-------- */
+@media only screen and (min-width:700px) {
+
+  /* ---- Laptop or tablet styles below ---- */
+  section::after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+
+  .img-left {
+    float: left;
+    width: 65%;
+    margin: auto;
+    padding-right: 30px;
+    padding-top: 30px;
+  }
+
+  .img-right {
+    float: right;
+    width: 60%;
+    margin: auto;
+    padding-left: 15px;
+  }
+
+  .p-block {
+    margin: auto;
+    padding-top: 20px;
+    font-family: serif;
+    font-size: 22px;
+  }
+}
+
+/* ----
+END Laptop or tablet styles below
+ ---- */
+@media only screen and (min-width:1100px) {
+
+  /* ---- Very large Desktop styles below ---- */
+  .col {
+    width: 30%;
+    float: left;
+    padding: 1%;
+  }
+
+  .row::after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+	
+	input {
+	width: 900px;
+	}
+}
+
+/* ---- END Very large Desktop styles below ---- */
+/* --------
+DO NOT CHANGE ANYTHING BELOW
+-------- */
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
